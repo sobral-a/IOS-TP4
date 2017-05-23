@@ -18,6 +18,7 @@ class FacebookButtonAnimationViewController: UIViewController, UITextFieldDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         msgTextField.delegate = self
+        
         sendButton.isHidden = true
 
         // Do any additional setup after loading the view.

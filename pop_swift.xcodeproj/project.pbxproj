@@ -14,6 +14,7 @@
 		4EEF9BBC1C1F21410085A715 /* ExamplesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF9BBB1C1F21410085A715 /* ExamplesListViewController.swift */; };
 		4EEF9BC01C1F226A0085A715 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF9BBF1C1F226A0085A715 /* ExampleCell.swift */; };
 		AC40FBB61ED4A97100167DAB /* FacebookButtonAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40FBB51ED4A97100167DAB /* FacebookButtonAnimationViewController.swift */; };
+		AC40FBB81ED4AEE400167DAB /* WrongPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40FBB71ED4AEE400167DAB /* WrongPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		4EEF9BBF1C1F226A0085A715 /* ExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleCell.swift; path = Views/Render/ExampleCell.swift; sourceTree = "<group>"; };
 		AC40FB9D1ED4A45300167DAB /* pop.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pop.xcodeproj; path = "pop_swift/SDK/pop-master/pop.xcodeproj"; sourceTree = "<group>"; };
 		AC40FBB51ED4A97100167DAB /* FacebookButtonAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookButtonAnimationViewController.swift; sourceTree = "<group>"; };
+		AC40FBB71ED4AEE400167DAB /* WrongPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrongPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				4EEF9BBA1C1F208C0085A715 /* ViewControllers */,
 				4EEF9BA81C1F1FD40085A715 /* AppDelegate.swift */,
 				4EEF9BAC1C1F1FD40085A715 /* Main.storyboard */,
+				AC40FBB71ED4AEE400167DAB /* WrongPasswordViewController.swift */,
 				4EEF9BAF1C1F1FD40085A715 /* Assets.xcassets */,
 				AC40FBB51ED4A97100167DAB /* FacebookButtonAnimationViewController.swift */,
 				4EEF9BB11C1F1FD40085A715 /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC40FBB81ED4AEE400167DAB /* WrongPasswordViewController.swift in Sources */,
 				4EEF9BC01C1F226A0085A715 /* ExampleCell.swift in Sources */,
 				4EEF9BBC1C1F21410085A715 /* ExamplesListViewController.swift in Sources */,
 				4EEF9BA91C1F1FD40085A715 /* AppDelegate.swift in Sources */,

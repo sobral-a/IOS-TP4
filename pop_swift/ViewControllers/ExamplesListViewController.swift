@@ -39,4 +39,20 @@ class ExamplesListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:
+        IndexPath) {
+        switch (indexPath.row) {
+        case 0:
+            performSegue(withIdentifier:"openFB", sender: self)
+            break;
+        case 1:
+            performSegue(withIdentifier:"openWrongPass", sender: self)
+            break;
+        case 2:
+            performSegue(withIdentifier:"openCustomTransition", sender: self)
+            break;
+        default:
+            break; }
+    }
 }

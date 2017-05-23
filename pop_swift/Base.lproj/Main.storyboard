@@ -35,6 +35,7 @@
                     <navigationItem key="navigationItem" title="Examples" id="Kg8-Fy-OQV"/>
                     <connections>
                         <segue destination="usn-ga-3fI" kind="show" identifier="openFB" id="62p-sT-Ntp"/>
+                        <segue destination="ct5-jM-eXa" kind="show" identifier="openWrongPass" id="INi-bO-DnW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzo-cW-rV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,7 +64,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A75-dz-kuQ">
                                 <rect key="frame" x="313" y="119" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Send"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdb-MC-3gk">
                                 <rect key="frame" x="315" y="103" width="42" height="46"/>
@@ -81,7 +82,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8f-pp-cao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910" y="997"/>
+            <point key="canvasLocation" x="1919" y="1005"/>
+        </scene>
+        <!--Wrong Password View Controller-->
+        <scene sceneID="BKh-fx-xvn">
+            <objects>
+                <viewController id="ct5-jM-eXa" customClass="WrongPasswordViewController" customModule="pop_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K58-Ee-96r"/>
+                        <viewControllerLayoutGuide type="bottom" id="wJb-GL-TJQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fmn-AP-MeW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-i0-uVD">
+                                <rect key="frame" x="164" y="118" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="ct5-jM-eXa" eventType="touchUpInside" id="zTE-gj-6QH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4G-YG-6Hu">
+                                <rect key="frame" x="25" y="80" width="325" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="o4G-YG-6Hu" id="bJs-SR-EAm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dw-By-Vg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="322"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FD5-Wf-KlJ">
